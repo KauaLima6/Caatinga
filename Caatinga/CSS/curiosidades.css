@@ -1,0 +1,98 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333; 
+  background-color: #f9f9f9; 
+}
+
+.carousel-inner {
+  width: 100vw; 
+  height: 350px; 
+  overflow: hidden; 
+  background-color: #2d5e24;
+}
+
+.carousel-item img {
+  width: 100%; 
+  height: auto; 
+  max-height: 350px;
+}
+
+.card {
+  border: 1px solid green;
+  transition: transform 0.3s; 
+}
+
+.card:hover {
+  box-shadow: 5px 5px 50px rgb(49, 255, 145); /* Aplica sombra verde brilhante ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente o tamanho do cartão */
+}
+
+.card-title {
+  font-weight: bold; /* Define o título do cartão em negrito */
+}
+
+.card-body {
+  text-align: center; /* Centraliza o conteúdo do corpo do cartão */
+}
+
+.container h2 {
+  margin-bottom: 20px; /* Adiciona espaçamento inferior ao título */
+  color: #007B5E; /* Define a cor do título como verde escuro */
+}
+
+.img-fluid {
+  margin-bottom: 15px; /* Adiciona espaçamento inferior à imagem */
+  border-radius: 8px; /* Arredonda os cantos da imagem */
+  transition: transform 0.3s; /* Suaviza transformações visuais */
+}
+
+.img-fluid:hover {
+  transform: scale(1.1); /* Amplia a imagem ao passar o mouse */
+}
+
+nav {
+  padding: 20px; /* Adiciona espaçamento interno ao nav */
+  background-color: transparent; /* Deixa o fundo transparente */
+  position: absolute; /* Posiciona o nav de forma absoluta */
+  left: 70%; /* Move o nav para 70% da largura da página */
+  z-index: 1; /* Garante que o nav fique acima de outros elementos */
+}
+
+ul {
+  display: flex; /* Organiza os itens em linha horizontal */
+}
+
+nav li {
+  display: inline; /* Garante que os itens fiquem lado a lado */
+}
+
+nav li a {
+  color: #fff; /* Define a cor do texto como branco */
+  text-decoration: none; /* Remove sublinhado dos links */
+  padding: 15px; /* Adiciona espaçamento interno ao link */
+  font-size: 22px; /* Define o tamanho da fonte */
+  transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+
+nav li a:hover {
+  transform: translateY(-5px); /* Move o link 5px para cima ao passar o mouse */
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    left: 50%; /* Centraliza o nav em telas menores */
+  }
+  ul {
+    display: flex; /* Mantém os itens organizados em linha horizontal */
+  }
+  nav li {
+    display: inline; /* Garante que os itens fiquem lado a lado */
+  }
+}
